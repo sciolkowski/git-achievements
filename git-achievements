@@ -315,7 +315,7 @@ function check_for_achievements
 
 function link_to_git_docs
 {
-    sed -e 's_git \([a-z0-9-]*\)_<a href="http://www.kernel.org/pub/software/scm/git/docs/git-\1.html">git-\1</a>_g' | sed -e 's/\/git-hooks/\/githooks/g'
+    sed -e 's_git \([a-z0-9-]*\)_<a href="https://www.kernel.org/pub/software/scm/git/docs/git-\1.html">git-\1</a>_g' | sed -e 's/\/git-hooks/\/githooks/g'
 }
 
 function clean_logged_achievements() {
@@ -349,7 +349,7 @@ echo "
     levels=`clean_logged_achievements | awk '{ if (NR % 2 != 0) print $0 }' | grep Level | sed -e 's/.* //g' -e 's/)//g' | awk '{ t=t+$0 } END { print t }'`
     onelevels=`clean_logged_achievements | awk '{ if (NR % 2 != 0) print $0 }' | wc -l`
     let points="${levels}"+"${onelevels}"
-    echo "Unlocked ${unlockedCount}/$total <a href=\"http://github.com/icefox/git-achievements\">Git Achievements</a> for $points points<br>" >> index.html
+    echo "Unlocked ${unlockedCount}/$total <a href=\"https://github.com/sciolkowski/git-achievements\">Git Achievements</a> for $points points<br>" >> index.html
 
     unlocked=`cat "${ACHIEVEMENTSLOGFILE}" | grep Unlocked | wc -l`
 
