@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?><rss version="2.0"><channel>
 <title>sciolkowski's Git Achievements</title>
+<item><title>Blacksmith (Level 5)</title><description>Created a branch using git checkout -b.</description></item>
 <item><title>Socialite (Level 5)</title><description>pushed a branch to a remote repository using git push</description></item>
 <item><title>Cherry Picker</title><description>Used git cherry-pick to add a sha from another branch into the current branch.</description></item>
 <item><title>Apprentice Banker (Level 2)</title><description>Join two or more development histories together with git merge.</description></item>
@@ -19,5 +20,4 @@
 <item><title>Weaver</title><description>Investigate old branches by using git reflog</description></item>
 <item><title>Apprentice Socialite (Level 1)</title><description>pushed a branch to a remote repository using git push</description></item>
 <item><title>Gipsy (Level 4)</title><description>Create, list, delete a tag signed with GPG using git tag</description></item>
-<item><title>Apprentice Blacksmith (Level 3)</title><description>Created a branch using git checkout -b.</description></item>
 </channel></rss>
